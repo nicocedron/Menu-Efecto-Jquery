@@ -1,0 +1,73 @@
+nav#menu2{
+	width:210px;
+	margin:0 auto;
+}
+nav#menu2 ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+	font-family:Arial;
+	overflow:hidden;
+	border-radius:5px;
+}
+
+nav#menu2 ul li{
+	float:left;
+	display:block;
+	background:#00beda;
+	position:relative;
+	cursor:pointer;
+	
+}
+nav#menu2 ul li a{
+	padding:10px;
+	display:block;
+	text-decoration:none;
+	color:#fff;
+	
+}
+
+nav#menu2 ul li .top{
+	position:absolute;
+	top:0;
+	width:100%;
+	background:#007fcf;
+	background:-webkit-linear-gradient(#007fcf,#009cff);
+	background:-moz-linear-gradient(#007fcf,#009cff);
+	background:-ms-linear-gradient(#007fcf,#009cff);
+	background:-o-linear-gradient(#007fcf,#009cff);
+	background:linear-gradient(#007fcf,#009cff);
+}
+nav#menu2 ul li .bottom{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	background:#009cff;
+}
+nav#menu2 ul li .txt{
+	
+	position:relative;
+	z-index:3;
+}
+
+/*Bordes*/
+
+	nav#menu2 ul li:first-child{
+		border-radius:5px 0 0 5px;
+	}
+	nav#menu2 ul li:last-child{
+		border-radius:0 5px 5px 0;
+	}	
+	
+	nav#menu2 ul li:first-child > .bottom{
+		border-radius:0 0 0 5px;
+	}
+	nav#menu2 ul li:first-child > .top{
+		border-radius:5px 0 0 0;
+	}
+	nav#menu2 ul li:last-child > .top{
+		border-radius:0 5px 0 0;
+	}
+	nav#menu2 ul li:last-child > .bottom{
+		border-radius:0 0 5px 0;
+	}

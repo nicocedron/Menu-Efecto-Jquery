@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		
+		<title>Test Menu Animacion Jquery</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" href="menu.css"/>
+		<link rel="stylesheet" href="menu2.css"/>
+		<link rel="stylesheet" href="menu3.css"/>
+		<script type="text/javascript" src="jquery.js"></script>
+		<script type="text/javascript" src="menu.jquery.js"></script>
+		<script type="text/javascript">
+			$(document).on('ready',inicio);
+			
+			function inicio(){
+				
+				$('#menu,#menu2').menusito(true);
+				$('#menu3').menusito();
+				
+			}
+			
+		</script>
+		<style type="text/css">
+			body{
+				margin:10% 0;
+				background:url(grey.png) repeat;
+			}
+			.azul{
+				background:#42adff;
+				width:400px;
+				margin:0 auto;
+				padding:30px;
+				position:relative;
+				border-radius:0 5px 0 5px;
+			}
+			.azul::before{
+				content: " ";
+				border-left: 30px solid #fff;
+				border-bottom: 30px solid transparent;
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+
+			.azul::after{
+				content: " ";
+				border-right: 30px solid #fff;
+				border-top: 30px solid transparent;
+				position: absolute;
+				right: 0;
+				bottom: 0;
+			}
+
+			.blanco{
+				background:#fff;
+				padding:10px 0;
+				position:relative;
+				border-radius:2px;
+			}
+		</style>
+	</head>
+	<body>
+		
+			<div class="azul">
+				<div class="blanco">
+					<nav id="menu">
+						<ul>
+							<li><a href="">Test</a></li>
+							<li><a href="">Test</a></li>
+							<li><a href="">Test</a></li>
+							<li><a href="">Test</a></li>
+					
+						</ul>
+					</nav>
+					
+					<div style="margin:30px;"></div>
+					
+					<nav id="menu2">
+						<ul>
+							<li><a href="">Test</a></li>
+							<li><a href="">Test</a></li>
+							<li><a href="">Test</a></li>
+							<li><a href="">Test</a></li>
+					
+						</ul>
+					</nav>
+					
+					<div style="margin:30px;"></div>
+					
+					
+					<nav id="menu3">
+						<ul>
+							<li><a href="">Botones</a></li>
+							<li><a href="">Estilo</a></li>
+							<li><a href="">Mejorando</a></li>
+							<li><a href="">la</a></li>
+					
+						</ul>
+					</nav>
+				</div>
+			</div>
+			
+			
+		
+	</body>
+</html>

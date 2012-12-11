@@ -1,0 +1,45 @@
+nav#menu{
+	width:210px;
+	margin:0 auto;
+}
+nav#menu ul{
+	padding:0;
+	margin:0;
+	list-style:none;
+	font-family:Arial;
+	overflow:hidden;
+}
+nav#menu ul li{
+	
+	float:left;
+	display:block;
+	background:red;
+	position:relative;
+	cursor:pointer;
+	
+}
+nav#menu ul li a{
+	padding:10px;
+	display:block;
+	text-decoration:none;
+	color:#fff;
+	
+}
+
+nav#menu ul li .top{
+	position:absolute;
+	top:0;
+	width:100%;
+	background:green;
+}
+nav#menu ul li .bottom{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	background:green;
+}
+nav#menu ul li .txt{
+	
+	position:relative;
+	z-index:3;
+}
